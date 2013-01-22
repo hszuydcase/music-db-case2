@@ -33,16 +33,19 @@
             this.button2 = new System.Windows.Forms.Button();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Location = new System.Drawing.Point(75, 68);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(80, 17);
             this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
+            this.checkBox1.Text = "Leon is gay";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
@@ -74,11 +77,20 @@
             this.checkBox3.Text = "checkBox3";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(75, 23);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.checkBox2);
@@ -97,6 +109,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.ComboBox comboBox2;
     }
 }
 
