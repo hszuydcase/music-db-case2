@@ -740,7 +740,7 @@
   <xs:element name="MusicIndexDataSetDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MusicIndexDataSetDataSet" msprop:Generator_UserDSName="MusicIndexDataSetDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Track" msprop:Generator_TableClassName="TrackDataTable" msprop:Generator_TableVarName="tableTrack" msprop:Generator_TablePropName="Track" msprop:Generator_RowDeletingName="TrackRowDeleting" msprop:Generator_RowChangingName="TrackRowChanging" msprop:Generator_RowEvHandlerName="TrackRowChangeEventHandler" msprop:Generator_RowDeletedName="TrackRowDeleted" msprop:Generator_UserTableName="Track" msprop:Generator_RowChangedName="TrackRowChanged" msprop:Generator_RowEvArgName="TrackRowChangeEvent" msprop:Generator_RowClassName="TrackRow">
+        <xs:element name="Track" msprop:Generator_TableClassName="TrackDataTable" msprop:Generator_TableVarName="tableTrack" msprop:Generator_RowChangedName="TrackRowChanged" msprop:Generator_TablePropName="Track" msprop:Generator_RowDeletingName="TrackRowDeleting" msprop:Generator_RowChangingName="TrackRowChanging" msprop:Generator_RowEvHandlerName="TrackRowChangeEventHandler" msprop:Generator_RowDeletedName="TrackRowDeleted" msprop:Generator_RowClassName="TrackRow" msprop:Generator_UserTableName="Track" msprop:Generator_RowEvArgName="TrackRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="titel" msprop:Generator_ColumnVarNameInTable="columntitel" msprop:Generator_ColumnPropNameInRow="titel" msprop:Generator_ColumnPropNameInTable="titelColumn" msprop:Generator_UserColumnName="titel" minOccurs="0">
@@ -778,7 +778,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="alb_tra" msprop:Generator_TableClassName="alb_traDataTable" msprop:Generator_TableVarName="tablealb_tra" msprop:Generator_TablePropName="alb_tra" msprop:Generator_RowDeletingName="alb_traRowDeleting" msprop:Generator_RowChangingName="alb_traRowChanging" msprop:Generator_RowEvHandlerName="alb_traRowChangeEventHandler" msprop:Generator_RowDeletedName="alb_traRowDeleted" msprop:Generator_UserTableName="alb_tra" msprop:Generator_RowChangedName="alb_traRowChanged" msprop:Generator_RowEvArgName="alb_traRowChangeEvent" msprop:Generator_RowClassName="alb_traRow">
+        <xs:element name="alb_tra" msprop:Generator_TableClassName="alb_traDataTable" msprop:Generator_TableVarName="tablealb_tra" msprop:Generator_RowChangedName="alb_traRowChanged" msprop:Generator_TablePropName="alb_tra" msprop:Generator_RowDeletingName="alb_traRowDeleting" msprop:Generator_RowChangingName="alb_traRowChanging" msprop:Generator_RowEvHandlerName="alb_traRowChangeEventHandler" msprop:Generator_RowDeletedName="alb_traRowDeleted" msprop:Generator_RowClassName="alb_traRow" msprop:Generator_UserTableName="alb_tra" msprop:Generator_RowEvArgName="alb_traRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="album_id" msprop:Generator_ColumnVarNameInTable="columnalbum_id" msprop:Generator_ColumnPropNameInRow="album_id" msprop:Generator_ColumnPropNameInTable="album_idColumn" msprop:Generator_UserColumnName="album_id" type="xs:int" />
@@ -786,7 +786,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Album" msprop:Generator_TableClassName="AlbumDataTable" msprop:Generator_TableVarName="tableAlbum" msprop:Generator_TablePropName="Album" msprop:Generator_RowDeletingName="AlbumRowDeleting" msprop:Generator_RowChangingName="AlbumRowChanging" msprop:Generator_RowEvHandlerName="AlbumRowChangeEventHandler" msprop:Generator_RowDeletedName="AlbumRowDeleted" msprop:Generator_UserTableName="Album" msprop:Generator_RowChangedName="AlbumRowChanged" msprop:Generator_RowEvArgName="AlbumRowChangeEvent" msprop:Generator_RowClassName="AlbumRow">
+        <xs:element name="Album" msprop:Generator_TableClassName="AlbumDataTable" msprop:Generator_TableVarName="tableAlbum" msprop:Generator_RowChangedName="AlbumRowChanged" msprop:Generator_TablePropName="Album" msprop:Generator_RowDeletingName="AlbumRowDeleting" msprop:Generator_RowChangingName="AlbumRowChanging" msprop:Generator_RowEvHandlerName="AlbumRowChangeEventHandler" msprop:Generator_RowDeletedName="AlbumRowDeleted" msprop:Generator_RowClassName="AlbumRow" msprop:Generator_UserTableName="Album" msprop:Generator_RowEvArgName="AlbumRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="album_naam" msprop:Generator_ColumnVarNameInTable="columnalbum_naam" msprop:Generator_ColumnPropNameInRow="album_naam" msprop:Generator_ColumnPropNameInTable="album_naamColumn" msprop:Generator_UserColumnName="album_naam" minOccurs="0">
@@ -809,7 +809,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="artiest" msprop:Generator_TableClassName="artiestDataTable" msprop:Generator_TableVarName="tableartiest" msprop:Generator_TablePropName="artiest" msprop:Generator_RowDeletingName="artiestRowDeleting" msprop:Generator_RowChangingName="artiestRowChanging" msprop:Generator_RowEvHandlerName="artiestRowChangeEventHandler" msprop:Generator_RowDeletedName="artiestRowDeleted" msprop:Generator_UserTableName="artiest" msprop:Generator_RowChangedName="artiestRowChanged" msprop:Generator_RowEvArgName="artiestRowChangeEvent" msprop:Generator_RowClassName="artiestRow">
+        <xs:element name="artiest" msprop:Generator_TableClassName="artiestDataTable" msprop:Generator_TableVarName="tableartiest" msprop:Generator_RowChangedName="artiestRowChanged" msprop:Generator_TablePropName="artiest" msprop:Generator_RowDeletingName="artiestRowDeleting" msprop:Generator_RowChangingName="artiestRowChanging" msprop:Generator_RowEvHandlerName="artiestRowChangeEventHandler" msprop:Generator_RowDeletedName="artiestRowDeleted" msprop:Generator_RowClassName="artiestRow" msprop:Generator_UserTableName="artiest" msprop:Generator_RowEvArgName="artiestRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="artiest_naam" msprop:Generator_ColumnVarNameInTable="columnartiest_naam" msprop:Generator_ColumnPropNameInRow="artiest_naam" msprop:Generator_ColumnPropNameInTable="artiest_naamColumn" msprop:Generator_UserColumnName="artiest_naam">
@@ -845,7 +845,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="art_tra" msprop:Generator_TableClassName="art_traDataTable" msprop:Generator_TableVarName="tableart_tra" msprop:Generator_TablePropName="art_tra" msprop:Generator_RowDeletingName="art_traRowDeleting" msprop:Generator_RowChangingName="art_traRowChanging" msprop:Generator_RowEvHandlerName="art_traRowChangeEventHandler" msprop:Generator_RowDeletedName="art_traRowDeleted" msprop:Generator_UserTableName="art_tra" msprop:Generator_RowChangedName="art_traRowChanged" msprop:Generator_RowEvArgName="art_traRowChangeEvent" msprop:Generator_RowClassName="art_traRow">
+        <xs:element name="art_tra" msprop:Generator_TableClassName="art_traDataTable" msprop:Generator_TableVarName="tableart_tra" msprop:Generator_RowChangedName="art_traRowChanged" msprop:Generator_TablePropName="art_tra" msprop:Generator_RowDeletingName="art_traRowDeleting" msprop:Generator_RowChangingName="art_traRowChanging" msprop:Generator_RowEvHandlerName="art_traRowChangeEventHandler" msprop:Generator_RowDeletedName="art_traRowDeleted" msprop:Generator_RowClassName="art_traRow" msprop:Generator_UserTableName="art_tra" msprop:Generator_RowEvArgName="art_traRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="track_id" msprop:Generator_ColumnVarNameInTable="columntrack_id" msprop:Generator_ColumnPropNameInRow="track_id" msprop:Generator_ColumnPropNameInTable="track_idColumn" msprop:Generator_UserColumnName="track_id" type="xs:int" />
@@ -853,7 +853,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Band" msprop:Generator_TableClassName="BandDataTable" msprop:Generator_TableVarName="tableBand" msprop:Generator_TablePropName="Band" msprop:Generator_RowDeletingName="BandRowDeleting" msprop:Generator_RowChangingName="BandRowChanging" msprop:Generator_RowEvHandlerName="BandRowChangeEventHandler" msprop:Generator_RowDeletedName="BandRowDeleted" msprop:Generator_UserTableName="Band" msprop:Generator_RowChangedName="BandRowChanged" msprop:Generator_RowEvArgName="BandRowChangeEvent" msprop:Generator_RowClassName="BandRow">
+        <xs:element name="Band" msprop:Generator_TableClassName="BandDataTable" msprop:Generator_TableVarName="tableBand" msprop:Generator_RowChangedName="BandRowChanged" msprop:Generator_TablePropName="Band" msprop:Generator_RowDeletingName="BandRowDeleting" msprop:Generator_RowChangingName="BandRowChanging" msprop:Generator_RowEvHandlerName="BandRowChangeEventHandler" msprop:Generator_RowDeletedName="BandRowDeleted" msprop:Generator_RowClassName="BandRow" msprop:Generator_UserTableName="Band" msprop:Generator_RowEvArgName="BandRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="band_naam" msprop:Generator_ColumnVarNameInTable="columnband_naam" msprop:Generator_ColumnPropNameInRow="band_naam" msprop:Generator_ColumnPropNameInTable="band_naamColumn" msprop:Generator_UserColumnName="band_naam" minOccurs="0">
@@ -883,7 +883,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="band_art" msprop:Generator_TableClassName="band_artDataTable" msprop:Generator_TableVarName="tableband_art" msprop:Generator_TablePropName="band_art" msprop:Generator_RowDeletingName="band_artRowDeleting" msprop:Generator_RowChangingName="band_artRowChanging" msprop:Generator_RowEvHandlerName="band_artRowChangeEventHandler" msprop:Generator_RowDeletedName="band_artRowDeleted" msprop:Generator_UserTableName="band_art" msprop:Generator_RowChangedName="band_artRowChanged" msprop:Generator_RowEvArgName="band_artRowChangeEvent" msprop:Generator_RowClassName="band_artRow">
+        <xs:element name="band_art" msprop:Generator_TableClassName="band_artDataTable" msprop:Generator_TableVarName="tableband_art" msprop:Generator_RowChangedName="band_artRowChanged" msprop:Generator_TablePropName="band_art" msprop:Generator_RowDeletingName="band_artRowDeleting" msprop:Generator_RowChangingName="band_artRowChanging" msprop:Generator_RowEvHandlerName="band_artRowChangeEventHandler" msprop:Generator_RowDeletedName="band_artRowDeleted" msprop:Generator_RowClassName="band_artRow" msprop:Generator_UserTableName="band_art" msprop:Generator_RowEvArgName="band_artRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="band_id" msprop:Generator_ColumnVarNameInTable="columnband_id" msprop:Generator_ColumnPropNameInRow="band_id" msprop:Generator_ColumnPropNameInTable="band_idColumn" msprop:Generator_UserColumnName="band_id" type="xs:int" />
@@ -891,7 +891,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="cat_tra" msprop:Generator_TableClassName="cat_traDataTable" msprop:Generator_TableVarName="tablecat_tra" msprop:Generator_TablePropName="cat_tra" msprop:Generator_RowDeletingName="cat_traRowDeleting" msprop:Generator_RowChangingName="cat_traRowChanging" msprop:Generator_RowEvHandlerName="cat_traRowChangeEventHandler" msprop:Generator_RowDeletedName="cat_traRowDeleted" msprop:Generator_UserTableName="cat_tra" msprop:Generator_RowChangedName="cat_traRowChanged" msprop:Generator_RowEvArgName="cat_traRowChangeEvent" msprop:Generator_RowClassName="cat_traRow">
+        <xs:element name="cat_tra" msprop:Generator_TableClassName="cat_traDataTable" msprop:Generator_TableVarName="tablecat_tra" msprop:Generator_RowChangedName="cat_traRowChanged" msprop:Generator_TablePropName="cat_tra" msprop:Generator_RowDeletingName="cat_traRowDeleting" msprop:Generator_RowChangingName="cat_traRowChanging" msprop:Generator_RowEvHandlerName="cat_traRowChangeEventHandler" msprop:Generator_RowDeletedName="cat_traRowDeleted" msprop:Generator_RowClassName="cat_traRow" msprop:Generator_UserTableName="cat_tra" msprop:Generator_RowEvArgName="cat_traRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="cat_id" msprop:Generator_ColumnVarNameInTable="columncat_id" msprop:Generator_ColumnPropNameInRow="cat_id" msprop:Generator_ColumnPropNameInTable="cat_idColumn" msprop:Generator_UserColumnName="cat_id" type="xs:int" />
@@ -899,7 +899,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="categorie" msprop:Generator_TableClassName="categorieDataTable" msprop:Generator_TableVarName="tablecategorie" msprop:Generator_TablePropName="categorie" msprop:Generator_RowDeletingName="categorieRowDeleting" msprop:Generator_RowChangingName="categorieRowChanging" msprop:Generator_RowEvHandlerName="categorieRowChangeEventHandler" msprop:Generator_RowDeletedName="categorieRowDeleted" msprop:Generator_UserTableName="categorie" msprop:Generator_RowChangedName="categorieRowChanged" msprop:Generator_RowEvArgName="categorieRowChangeEvent" msprop:Generator_RowClassName="categorieRow">
+        <xs:element name="categorie" msprop:Generator_TableClassName="categorieDataTable" msprop:Generator_TableVarName="tablecategorie" msprop:Generator_RowChangedName="categorieRowChanged" msprop:Generator_TablePropName="categorie" msprop:Generator_RowDeletingName="categorieRowDeleting" msprop:Generator_RowChangingName="categorieRowChanging" msprop:Generator_RowEvHandlerName="categorieRowChangeEventHandler" msprop:Generator_RowDeletedName="categorieRowDeleted" msprop:Generator_RowClassName="categorieRow" msprop:Generator_UserTableName="categorie" msprop:Generator_RowEvArgName="categorieRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="cat_naam" msprop:Generator_ColumnVarNameInTable="columncat_naam" msprop:Generator_ColumnPropNameInRow="cat_naam" msprop:Generator_ColumnPropNameInTable="cat_naamColumn" msprop:Generator_UserColumnName="cat_naam" minOccurs="0">
@@ -913,7 +913,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="gebruiker" msprop:Generator_TableClassName="gebruikerDataTable" msprop:Generator_TableVarName="tablegebruiker" msprop:Generator_TablePropName="gebruiker" msprop:Generator_RowDeletingName="gebruikerRowDeleting" msprop:Generator_RowChangingName="gebruikerRowChanging" msprop:Generator_RowEvHandlerName="gebruikerRowChangeEventHandler" msprop:Generator_RowDeletedName="gebruikerRowDeleted" msprop:Generator_UserTableName="gebruiker" msprop:Generator_RowChangedName="gebruikerRowChanged" msprop:Generator_RowEvArgName="gebruikerRowChangeEvent" msprop:Generator_RowClassName="gebruikerRow">
+        <xs:element name="gebruiker" msprop:Generator_TableClassName="gebruikerDataTable" msprop:Generator_TableVarName="tablegebruiker" msprop:Generator_RowChangedName="gebruikerRowChanged" msprop:Generator_TablePropName="gebruiker" msprop:Generator_RowDeletingName="gebruikerRowDeleting" msprop:Generator_RowChangingName="gebruikerRowChanging" msprop:Generator_RowEvHandlerName="gebruikerRowChangeEventHandler" msprop:Generator_RowDeletedName="gebruikerRowDeleted" msprop:Generator_RowClassName="gebruikerRow" msprop:Generator_UserTableName="gebruiker" msprop:Generator_RowEvArgName="gebruikerRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="username" msprop:Generator_ColumnVarNameInTable="columnusername" msprop:Generator_ColumnPropNameInRow="username" msprop:Generator_ColumnPropNameInTable="usernameColumn" msprop:Generator_UserColumnName="username">
@@ -956,7 +956,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="geschiedenis" msprop:Generator_TableClassName="geschiedenisDataTable" msprop:Generator_TableVarName="tablegeschiedenis" msprop:Generator_TablePropName="geschiedenis" msprop:Generator_RowDeletingName="geschiedenisRowDeleting" msprop:Generator_RowChangingName="geschiedenisRowChanging" msprop:Generator_RowEvHandlerName="geschiedenisRowChangeEventHandler" msprop:Generator_RowDeletedName="geschiedenisRowDeleted" msprop:Generator_UserTableName="geschiedenis" msprop:Generator_RowChangedName="geschiedenisRowChanged" msprop:Generator_RowEvArgName="geschiedenisRowChangeEvent" msprop:Generator_RowClassName="geschiedenisRow">
+        <xs:element name="geschiedenis" msprop:Generator_TableClassName="geschiedenisDataTable" msprop:Generator_TableVarName="tablegeschiedenis" msprop:Generator_RowChangedName="geschiedenisRowChanged" msprop:Generator_TablePropName="geschiedenis" msprop:Generator_RowDeletingName="geschiedenisRowDeleting" msprop:Generator_RowChangingName="geschiedenisRowChanging" msprop:Generator_RowEvHandlerName="geschiedenisRowChangeEventHandler" msprop:Generator_RowDeletedName="geschiedenisRowDeleted" msprop:Generator_RowClassName="geschiedenisRow" msprop:Generator_UserTableName="geschiedenis" msprop:Generator_RowEvArgName="geschiedenisRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="user_id" msprop:Generator_ColumnVarNameInTable="columnuser_id" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_UserColumnName="user_id" type="xs:int" />
@@ -965,7 +965,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="favoriet" msprop:Generator_TableClassName="favorietDataTable" msprop:Generator_TableVarName="tablefavoriet" msprop:Generator_TablePropName="favoriet" msprop:Generator_RowDeletingName="favorietRowDeleting" msprop:Generator_RowChangingName="favorietRowChanging" msprop:Generator_RowEvHandlerName="favorietRowChangeEventHandler" msprop:Generator_RowDeletedName="favorietRowDeleted" msprop:Generator_UserTableName="favoriet" msprop:Generator_RowChangedName="favorietRowChanged" msprop:Generator_RowEvArgName="favorietRowChangeEvent" msprop:Generator_RowClassName="favorietRow">
+        <xs:element name="favoriet" msprop:Generator_TableClassName="favorietDataTable" msprop:Generator_TableVarName="tablefavoriet" msprop:Generator_RowChangedName="favorietRowChanged" msprop:Generator_TablePropName="favoriet" msprop:Generator_RowDeletingName="favorietRowDeleting" msprop:Generator_RowChangingName="favorietRowChanging" msprop:Generator_RowEvHandlerName="favorietRowChangeEventHandler" msprop:Generator_RowDeletedName="favorietRowDeleted" msprop:Generator_RowClassName="favorietRow" msprop:Generator_UserTableName="favoriet" msprop:Generator_RowEvArgName="favorietRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="user_id" msprop:Generator_ColumnVarNameInTable="columnuser_id" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_UserColumnName="user_id" type="xs:int" />
@@ -974,7 +974,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Rating" msprop:Generator_TableClassName="RatingDataTable" msprop:Generator_TableVarName="tableRating" msprop:Generator_TablePropName="Rating" msprop:Generator_RowDeletingName="RatingRowDeleting" msprop:Generator_RowChangingName="RatingRowChanging" msprop:Generator_RowEvHandlerName="RatingRowChangeEventHandler" msprop:Generator_RowDeletedName="RatingRowDeleted" msprop:Generator_UserTableName="Rating" msprop:Generator_RowChangedName="RatingRowChanged" msprop:Generator_RowEvArgName="RatingRowChangeEvent" msprop:Generator_RowClassName="RatingRow">
+        <xs:element name="Rating" msprop:Generator_TableClassName="RatingDataTable" msprop:Generator_TableVarName="tableRating" msprop:Generator_RowChangedName="RatingRowChanged" msprop:Generator_TablePropName="Rating" msprop:Generator_RowDeletingName="RatingRowDeleting" msprop:Generator_RowChangingName="RatingRowChanging" msprop:Generator_RowEvHandlerName="RatingRowChangeEventHandler" msprop:Generator_RowDeletedName="RatingRowDeleted" msprop:Generator_RowClassName="RatingRow" msprop:Generator_UserTableName="Rating" msprop:Generator_RowEvArgName="RatingRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="user_id" msprop:Generator_ColumnVarNameInTable="columnuser_id" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_UserColumnName="user_id" type="xs:int" />
@@ -983,7 +983,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="review" msprop:Generator_TableClassName="reviewDataTable" msprop:Generator_TableVarName="tablereview" msprop:Generator_TablePropName="review" msprop:Generator_RowDeletingName="reviewRowDeleting" msprop:Generator_RowChangingName="reviewRowChanging" msprop:Generator_RowEvHandlerName="reviewRowChangeEventHandler" msprop:Generator_RowDeletedName="reviewRowDeleted" msprop:Generator_UserTableName="review" msprop:Generator_RowChangedName="reviewRowChanged" msprop:Generator_RowEvArgName="reviewRowChangeEvent" msprop:Generator_RowClassName="reviewRow">
+        <xs:element name="review" msprop:Generator_TableClassName="reviewDataTable" msprop:Generator_TableVarName="tablereview" msprop:Generator_RowChangedName="reviewRowChanged" msprop:Generator_TablePropName="review" msprop:Generator_RowDeletingName="reviewRowDeleting" msprop:Generator_RowChangingName="reviewRowChanging" msprop:Generator_RowEvHandlerName="reviewRowChangeEventHandler" msprop:Generator_RowDeletedName="reviewRowDeleted" msprop:Generator_RowClassName="reviewRow" msprop:Generator_UserTableName="review" msprop:Generator_RowEvArgName="reviewRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="user_id" msprop:Generator_ColumnVarNameInTable="columnuser_id" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" msprop:Generator_UserColumnName="user_id" type="xs:int" minOccurs="0" />
@@ -999,7 +999,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="band_tra" msprop:Generator_TableClassName="band_traDataTable" msprop:Generator_TableVarName="tableband_tra" msprop:Generator_TablePropName="band_tra" msprop:Generator_RowDeletingName="band_traRowDeleting" msprop:Generator_RowChangingName="band_traRowChanging" msprop:Generator_RowEvHandlerName="band_traRowChangeEventHandler" msprop:Generator_RowDeletedName="band_traRowDeleted" msprop:Generator_UserTableName="band_tra" msprop:Generator_RowChangedName="band_traRowChanged" msprop:Generator_RowEvArgName="band_traRowChangeEvent" msprop:Generator_RowClassName="band_traRow">
+        <xs:element name="band_tra" msprop:Generator_TableClassName="band_traDataTable" msprop:Generator_TableVarName="tableband_tra" msprop:Generator_RowChangedName="band_traRowChanged" msprop:Generator_TablePropName="band_tra" msprop:Generator_RowDeletingName="band_traRowDeleting" msprop:Generator_RowChangingName="band_traRowChanging" msprop:Generator_RowEvHandlerName="band_traRowChangeEventHandler" msprop:Generator_RowDeletedName="band_traRowDeleted" msprop:Generator_RowClassName="band_traRow" msprop:Generator_UserTableName="band_tra" msprop:Generator_RowEvArgName="band_traRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="band_id" msprop:Generator_ColumnVarNameInTable="columnband_id" msprop:Generator_ColumnPropNameInRow="band_id" msprop:Generator_ColumnPropNameInTable="band_idColumn" msprop:Generator_UserColumnName="band_id" type="xs:int" />
@@ -1073,72 +1073,72 @@
       <xs:field xpath="mstns:band_id" />
       <xs:field xpath="mstns:track_id" />
     </xs:unique>
-    <xs:keyref name="FK_Track_band_tra" refer="Constraint1" msprop:rel_Generator_UserChildTable="band_tra" msprop:rel_Generator_ChildPropName="Getband_traRows" msprop:rel_Generator_UserRelationName="FK_Track_band_tra" msprop:rel_Generator_ParentPropName="TrackRow" msprop:rel_Generator_RelationVarName="relationFK_Track_band_tra" msprop:rel_Generator_UserParentTable="Track">
+    <xs:keyref name="FK_Track_band_tra" refer="Constraint1" msprop:rel_Generator_UserChildTable="band_tra" msprop:rel_Generator_ChildPropName="Getband_traRows" msprop:rel_Generator_UserRelationName="FK_Track_band_tra" msprop:rel_Generator_RelationVarName="relationFK_Track_band_tra" msprop:rel_Generator_UserParentTable="Track" msprop:rel_Generator_ParentPropName="TrackRow">
       <xs:selector xpath=".//mstns:band_tra" />
       <xs:field xpath="mstns:track_id" />
     </xs:keyref>
-    <xs:keyref name="FK_gebruiker_review" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="review" msprop:rel_Generator_ChildPropName="GetreviewRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_review" msprop:rel_Generator_ParentPropName="gebruikerRow" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_review" msprop:rel_Generator_UserParentTable="gebruiker">
-      <xs:selector xpath=".//mstns:review" />
-      <xs:field xpath="mstns:user_id" />
-    </xs:keyref>
-    <xs:keyref name="FK_Track_review" refer="Constraint1" msprop:rel_Generator_UserChildTable="review" msprop:rel_Generator_ChildPropName="GetreviewRows" msprop:rel_Generator_UserRelationName="FK_Track_review" msprop:rel_Generator_ParentPropName="TrackRow" msprop:rel_Generator_RelationVarName="relationFK_Track_review" msprop:rel_Generator_UserParentTable="Track">
+    <xs:keyref name="FK_Track_review" refer="Constraint1" msprop:rel_Generator_UserChildTable="review" msprop:rel_Generator_ChildPropName="GetreviewRows" msprop:rel_Generator_UserRelationName="FK_Track_review" msprop:rel_Generator_RelationVarName="relationFK_Track_review" msprop:rel_Generator_UserParentTable="Track" msprop:rel_Generator_ParentPropName="TrackRow">
       <xs:selector xpath=".//mstns:review" />
       <xs:field xpath="mstns:track_id" />
     </xs:keyref>
-    <xs:keyref name="FK_gebruiker_Rating" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="Rating" msprop:rel_Generator_ChildPropName="GetRatingRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_Rating" msprop:rel_Generator_ParentPropName="gebruikerRow" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_Rating" msprop:rel_Generator_UserParentTable="gebruiker">
+    <xs:keyref name="FK_gebruiker_review" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="review" msprop:rel_Generator_ChildPropName="GetreviewRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_review" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_review" msprop:rel_Generator_UserParentTable="gebruiker" msprop:rel_Generator_ParentPropName="gebruikerRow">
+      <xs:selector xpath=".//mstns:review" />
+      <xs:field xpath="mstns:user_id" />
+    </xs:keyref>
+    <xs:keyref name="FK_gebruiker_Rating" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="Rating" msprop:rel_Generator_ChildPropName="GetRatingRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_Rating" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_Rating" msprop:rel_Generator_UserParentTable="gebruiker" msprop:rel_Generator_ParentPropName="gebruikerRow">
       <xs:selector xpath=".//mstns:Rating" />
       <xs:field xpath="mstns:user_id" />
     </xs:keyref>
-    <xs:keyref name="FK_Track_favoriet" refer="Constraint1" msprop:rel_Generator_UserChildTable="favoriet" msprop:rel_Generator_ChildPropName="GetfavorietRows" msprop:rel_Generator_UserRelationName="FK_Track_favoriet" msprop:rel_Generator_ParentPropName="TrackRow" msprop:rel_Generator_RelationVarName="relationFK_Track_favoriet" msprop:rel_Generator_UserParentTable="Track">
-      <xs:selector xpath=".//mstns:favoriet" />
-      <xs:field xpath="mstns:track_id" />
-    </xs:keyref>
-    <xs:keyref name="FK_gebruiker_favoriet" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="favoriet" msprop:rel_Generator_ChildPropName="GetfavorietRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_favoriet" msprop:rel_Generator_ParentPropName="gebruikerRow" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_favoriet" msprop:rel_Generator_UserParentTable="gebruiker">
+    <xs:keyref name="FK_gebruiker_favoriet" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="favoriet" msprop:rel_Generator_ChildPropName="GetfavorietRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_favoriet" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_favoriet" msprop:rel_Generator_UserParentTable="gebruiker" msprop:rel_Generator_ParentPropName="gebruikerRow">
       <xs:selector xpath=".//mstns:favoriet" />
       <xs:field xpath="mstns:user_id" />
     </xs:keyref>
-    <xs:keyref name="FK_Track_geschiedenis" refer="Constraint1" msprop:rel_Generator_UserChildTable="geschiedenis" msprop:rel_Generator_ChildPropName="GetgeschiedenisRows" msprop:rel_Generator_UserRelationName="FK_Track_geschiedenis" msprop:rel_Generator_ParentPropName="TrackRow" msprop:rel_Generator_RelationVarName="relationFK_Track_geschiedenis" msprop:rel_Generator_UserParentTable="Track">
-      <xs:selector xpath=".//mstns:geschiedenis" />
+    <xs:keyref name="FK_Track_favoriet" refer="Constraint1" msprop:rel_Generator_UserChildTable="favoriet" msprop:rel_Generator_ChildPropName="GetfavorietRows" msprop:rel_Generator_UserRelationName="FK_Track_favoriet" msprop:rel_Generator_RelationVarName="relationFK_Track_favoriet" msprop:rel_Generator_UserParentTable="Track" msprop:rel_Generator_ParentPropName="TrackRow">
+      <xs:selector xpath=".//mstns:favoriet" />
       <xs:field xpath="mstns:track_id" />
     </xs:keyref>
-    <xs:keyref name="FK_gebruiker_geschiedenis" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="geschiedenis" msprop:rel_Generator_ChildPropName="GetgeschiedenisRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_geschiedenis" msprop:rel_Generator_ParentPropName="gebruikerRow" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_geschiedenis" msprop:rel_Generator_UserParentTable="gebruiker">
+    <xs:keyref name="FK_gebruiker_geschiedenis" refer="gebruiker_Constraint1" msprop:rel_Generator_UserChildTable="geschiedenis" msprop:rel_Generator_ChildPropName="GetgeschiedenisRows" msprop:rel_Generator_UserRelationName="FK_gebruiker_geschiedenis" msprop:rel_Generator_RelationVarName="relationFK_gebruiker_geschiedenis" msprop:rel_Generator_UserParentTable="gebruiker" msprop:rel_Generator_ParentPropName="gebruikerRow">
       <xs:selector xpath=".//mstns:geschiedenis" />
       <xs:field xpath="mstns:user_id" />
     </xs:keyref>
-    <xs:keyref name="FK_Track_cat_tra" refer="Constraint1" msprop:rel_Generator_UserChildTable="cat_tra" msprop:rel_Generator_ChildPropName="Getcat_traRows" msprop:rel_Generator_UserRelationName="FK_Track_cat_tra" msprop:rel_Generator_ParentPropName="TrackRow" msprop:rel_Generator_RelationVarName="relationFK_Track_cat_tra" msprop:rel_Generator_UserParentTable="Track">
-      <xs:selector xpath=".//mstns:cat_tra" />
+    <xs:keyref name="FK_Track_geschiedenis" refer="Constraint1" msprop:rel_Generator_UserChildTable="geschiedenis" msprop:rel_Generator_ChildPropName="GetgeschiedenisRows" msprop:rel_Generator_UserRelationName="FK_Track_geschiedenis" msprop:rel_Generator_RelationVarName="relationFK_Track_geschiedenis" msprop:rel_Generator_UserParentTable="Track" msprop:rel_Generator_ParentPropName="TrackRow">
+      <xs:selector xpath=".//mstns:geschiedenis" />
       <xs:field xpath="mstns:track_id" />
     </xs:keyref>
-    <xs:keyref name="FK_categorie_cat_tra" refer="categorie_Constraint1" msprop:rel_Generator_UserChildTable="cat_tra" msprop:rel_Generator_ChildPropName="Getcat_traRows" msprop:rel_Generator_UserRelationName="FK_categorie_cat_tra" msprop:rel_Generator_RelationVarName="relationFK_categorie_cat_tra" msprop:rel_Generator_UserParentTable="categorie" msprop:rel_Generator_ParentPropName="categorieRow">
+    <xs:keyref name="FK_categorie_cat_tra" refer="categorie_Constraint1" msprop:rel_Generator_UserChildTable="cat_tra" msprop:rel_Generator_ChildPropName="Getcat_traRows" msprop:rel_Generator_UserRelationName="FK_categorie_cat_tra" msprop:rel_Generator_ParentPropName="categorieRow" msprop:rel_Generator_RelationVarName="relationFK_categorie_cat_tra" msprop:rel_Generator_UserParentTable="categorie">
       <xs:selector xpath=".//mstns:cat_tra" />
       <xs:field xpath="mstns:cat_id" />
     </xs:keyref>
-    <xs:keyref name="FK_artiest_band_art" refer="artiest_Constraint1" msprop:rel_Generator_UserChildTable="band_art" msprop:rel_Generator_ChildPropName="Getband_artRows" msprop:rel_Generator_UserRelationName="FK_artiest_band_art" msprop:rel_Generator_ParentPropName="artiestRow" msprop:rel_Generator_RelationVarName="relationFK_artiest_band_art" msprop:rel_Generator_UserParentTable="artiest">
-      <xs:selector xpath=".//mstns:band_art" />
-      <xs:field xpath="mstns:artiest_id" />
+    <xs:keyref name="FK_Track_cat_tra" refer="Constraint1" msprop:rel_Generator_UserChildTable="cat_tra" msprop:rel_Generator_ChildPropName="Getcat_traRows" msprop:rel_Generator_UserRelationName="FK_Track_cat_tra" msprop:rel_Generator_RelationVarName="relationFK_Track_cat_tra" msprop:rel_Generator_UserParentTable="Track" msprop:rel_Generator_ParentPropName="TrackRow">
+      <xs:selector xpath=".//mstns:cat_tra" />
+      <xs:field xpath="mstns:track_id" />
     </xs:keyref>
-    <xs:keyref name="FK_Band_band_art" refer="Band_Constraint1" msprop:rel_Generator_UserChildTable="band_art" msprop:rel_Generator_ChildPropName="Getband_artRows" msprop:rel_Generator_UserRelationName="FK_Band_band_art" msprop:rel_Generator_ParentPropName="BandRow" msprop:rel_Generator_RelationVarName="relationFK_Band_band_art" msprop:rel_Generator_UserParentTable="Band">
+    <xs:keyref name="FK_Band_band_art" refer="Band_Constraint1" msprop:rel_Generator_UserChildTable="band_art" msprop:rel_Generator_ChildPropName="Getband_artRows" msprop:rel_Generator_UserRelationName="FK_Band_band_art" msprop:rel_Generator_RelationVarName="relationFK_Band_band_art" msprop:rel_Generator_UserParentTable="Band" msprop:rel_Generator_ParentPropName="BandRow">
       <xs:selector xpath=".//mstns:band_art" />
       <xs:field xpath="mstns:band_id" />
     </xs:keyref>
-    <xs:keyref name="FK_artiest_art_tra" refer="artiest_Constraint1" msprop:rel_Generator_UserChildTable="art_tra" msprop:rel_Generator_ChildPropName="Getart_traRows" msprop:rel_Generator_UserRelationName="FK_artiest_art_tra" msprop:rel_Generator_ParentPropName="artiestRow" msprop:rel_Generator_RelationVarName="relationFK_artiest_art_tra" msprop:rel_Generator_UserParentTable="artiest">
+    <xs:keyref name="FK_artiest_band_art" refer="artiest_Constraint1" msprop:rel_Generator_UserChildTable="band_art" msprop:rel_Generator_ChildPropName="Getband_artRows" msprop:rel_Generator_UserRelationName="FK_artiest_band_art" msprop:rel_Generator_RelationVarName="relationFK_artiest_band_art" msprop:rel_Generator_UserParentTable="artiest" msprop:rel_Generator_ParentPropName="artiestRow">
+      <xs:selector xpath=".//mstns:band_art" />
+      <xs:field xpath="mstns:artiest_id" />
+    </xs:keyref>
+    <xs:keyref name="FK_artiest_art_tra" refer="artiest_Constraint1" msprop:rel_Generator_UserChildTable="art_tra" msprop:rel_Generator_ChildPropName="Getart_traRows" msprop:rel_Generator_UserRelationName="FK_artiest_art_tra" msprop:rel_Generator_RelationVarName="relationFK_artiest_art_tra" msprop:rel_Generator_UserParentTable="artiest" msprop:rel_Generator_ParentPropName="artiestRow">
       <xs:selector xpath=".//mstns:art_tra" />
       <xs:field xpath="mstns:artiest_id" />
     </xs:keyref>
-    <xs:keyref name="FK_Album_alb_tra" refer="Album_Constraint1" msprop:rel_Generator_UserChildTable="alb_tra" msprop:rel_Generator_ChildPropName="Getalb_traRows" msprop:rel_Generator_UserRelationName="FK_Album_alb_tra" msprop:rel_Generator_RelationVarName="relationFK_Album_alb_tra" msprop:rel_Generator_UserParentTable="Album" msprop:rel_Generator_ParentPropName="AlbumRow">
-      <xs:selector xpath=".//mstns:alb_tra" />
-      <xs:field xpath="mstns:album_id" />
-    </xs:keyref>
-    <xs:keyref name="FK_Track_alb_tra" refer="Constraint1" msprop:rel_Generator_UserChildTable="alb_tra" msprop:rel_Generator_ChildPropName="Getalb_traRows" msprop:rel_Generator_UserRelationName="FK_Track_alb_tra" msprop:rel_Generator_ParentPropName="TrackRow" msprop:rel_Generator_RelationVarName="relationFK_Track_alb_tra" msprop:rel_Generator_UserParentTable="Track">
+    <xs:keyref name="FK_Track_alb_tra" refer="Constraint1" msprop:rel_Generator_UserChildTable="alb_tra" msprop:rel_Generator_ChildPropName="Getalb_traRows" msprop:rel_Generator_UserRelationName="FK_Track_alb_tra" msprop:rel_Generator_RelationVarName="relationFK_Track_alb_tra" msprop:rel_Generator_UserParentTable="Track" msprop:rel_Generator_ParentPropName="TrackRow">
       <xs:selector xpath=".//mstns:alb_tra" />
       <xs:field xpath="mstns:track_id" />
+    </xs:keyref>
+    <xs:keyref name="FK_Album_alb_tra" refer="Album_Constraint1" msprop:rel_Generator_UserChildTable="alb_tra" msprop:rel_Generator_ChildPropName="Getalb_traRows" msprop:rel_Generator_UserRelationName="FK_Album_alb_tra" msprop:rel_Generator_ParentPropName="AlbumRow" msprop:rel_Generator_RelationVarName="relationFK_Album_alb_tra" msprop:rel_Generator_UserParentTable="Album">
+      <xs:selector xpath=".//mstns:alb_tra" />
+      <xs:field xpath="mstns:album_id" />
     </xs:keyref>
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Track_art_tra" msdata:parent="Track" msdata:child="art_tra" msdata:parentkey="track_id" msdata:childkey="track_id" msprop:Generator_UserChildTable="art_tra" msprop:Generator_ChildPropName="Getart_traRows" msprop:Generator_UserRelationName="Track_art_tra" msprop:Generator_ParentPropName="TrackRow" msprop:Generator_RelationVarName="relationTrack_art_tra" msprop:Generator_UserParentTable="Track" />
-      <msdata:Relationship name="Track_Rating" msdata:parent="Track" msdata:child="Rating" msdata:parentkey="track_id" msdata:childkey="track_id" msprop:Generator_UserChildTable="Rating" msprop:Generator_ChildPropName="GetRatingRows" msprop:Generator_UserRelationName="Track_Rating" msprop:Generator_ParentPropName="TrackRow" msprop:Generator_RelationVarName="relationTrack_Rating" msprop:Generator_UserParentTable="Track" />
-      <msdata:Relationship name="Band_band_tra" msdata:parent="Band" msdata:child="band_tra" msdata:parentkey="band_id" msdata:childkey="band_id" msprop:Generator_UserChildTable="band_tra" msprop:Generator_ChildPropName="Getband_traRows" msprop:Generator_UserRelationName="Band_band_tra" msprop:Generator_ParentPropName="BandRow" msprop:Generator_RelationVarName="relationBand_band_tra" msprop:Generator_UserParentTable="Band" />
+      <msdata:Relationship name="Track_art_tra" msdata:parent="Track" msdata:child="art_tra" msdata:parentkey="track_id" msdata:childkey="track_id" msprop:Generator_UserChildTable="art_tra" msprop:Generator_ChildPropName="Getart_traRows" msprop:Generator_UserRelationName="Track_art_tra" msprop:Generator_RelationVarName="relationTrack_art_tra" msprop:Generator_UserParentTable="Track" msprop:Generator_ParentPropName="TrackRow" />
+      <msdata:Relationship name="Track_Rating" msdata:parent="Track" msdata:child="Rating" msdata:parentkey="track_id" msdata:childkey="track_id" msprop:Generator_UserChildTable="Rating" msprop:Generator_ChildPropName="GetRatingRows" msprop:Generator_UserRelationName="Track_Rating" msprop:Generator_RelationVarName="relationTrack_Rating" msprop:Generator_UserParentTable="Track" msprop:Generator_ParentPropName="TrackRow" />
+      <msdata:Relationship name="Band_band_tra" msdata:parent="Band" msdata:child="band_tra" msdata:parentkey="band_id" msdata:childkey="band_id" msprop:Generator_UserChildTable="band_tra" msprop:Generator_ChildPropName="Getband_traRows" msprop:Generator_UserRelationName="Band_band_tra" msprop:Generator_RelationVarName="relationBand_band_tra" msprop:Generator_UserParentTable="Band" msprop:Generator_ParentPropName="BandRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
