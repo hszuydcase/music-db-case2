@@ -20,44 +20,41 @@ namespace Music_Index
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            // QUERY UITVOEREN DOET DIE NIET GOED ZOWEL DELETE ALS INSERT NIET
-            string connectionString = @"Provider=Microsoft.SQLSERVER.CE.OLEDB.4.0;" +
-                @"Data Source=|DataDirectory|\MusicIndexDataSet.sdf";
-            OleDbConnection connection = new OleDbConnection(connectionString);
-            OleDbCommand deleteCommand = new OleDbCommand();
-            OleDbDataAdapter adapter = new OleDbDataAdapter();
-
             try
             {
-                connection.Open();
+                SQLService sqlService = new SQLService();
+                bool bestaat = sqlService.Bestaat("SELECT * FROM gebruiker WHERE username = '" + inputUsername.Text + "' AND password = '" + inputPassword.Text + "' ");
 
-                //string command = "INSERT INTO Band (band_naam) VALUES ('test')";
-
-                deleteCommand.Connection = connection;
-                deleteCommand.CommandText = "INSERT INTO Band (band_naam) VALUES ('Muse')";
-                adapter.DeleteCommand = deleteCommand;
-
-                int rows = adapter.DeleteCommand.ExecuteNonQuery();
-                if (rows == 0)
+                if (bestaat == false)
                 {
-                    MessageBox.Show("NIET GELUKT");
+                    MessageBox.Show("Bestaat niet");
                 }
                 else
                 {
-                    MessageBox.Show("VERWIJDERD");
+                    MessageBox.Show("Bestaat");
                 }
             }
-            catch (Exception ed)
+            catch (Exception)
             {
-
-                MessageBox.Show(ed.Message);
-            }
-            finally
-            {
-                connection.Close();
+                
+                throw;
             }
 
 
+        }
+
+        private void btRegistreer_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SQLService sqlService = new SQLService();
+                sqlService.Insert("INSERT INTO gebruiker (username,password,user_voornaam,user_achternaam,email,admin_level) VALUES ('Josh', 'Josh','Josh','Josh','Josh',1) ");
+            }
+            catch (Exception obj)
+            {
+
+                MessageBox.Show(obj.Message);
+            }
         }
     }
 }

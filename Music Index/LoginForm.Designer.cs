@@ -33,8 +33,8 @@
             this.btRegistreer = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.inputUsername = new System.Windows.Forms.TextBox();
+            this.inputPassword = new System.Windows.Forms.TextBox();
             this.btWWVergeten = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -56,6 +56,7 @@
             this.btRegistreer.TabIndex = 1;
             this.btRegistreer.Text = "Registreer";
             this.btRegistreer.UseVisualStyleBackColor = true;
+            this.btRegistreer.Click += new System.EventHandler(this.btRegistreer_Click);
             // 
             // label1
             // 
@@ -75,19 +76,19 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
-            // textBox1
+            // inputUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(13, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(352, 20);
-            this.textBox1.TabIndex = 4;
+            this.inputUsername.Location = new System.Drawing.Point(13, 29);
+            this.inputUsername.Name = "inputUsername";
+            this.inputUsername.Size = new System.Drawing.Size(352, 20);
+            this.inputUsername.TabIndex = 4;
             // 
-            // textBox2
+            // inputPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(13, 78);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(352, 20);
-            this.textBox2.TabIndex = 4;
+            this.inputPassword.Location = new System.Drawing.Point(13, 78);
+            this.inputPassword.Name = "inputPassword";
+            this.inputPassword.Size = new System.Drawing.Size(352, 20);
+            this.inputPassword.TabIndex = 4;
             // 
             // btWWVergeten
             // 
@@ -104,8 +105,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 184);
             this.Controls.Add(this.btWWVergeten);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.inputPassword);
+            this.Controls.Add(this.inputUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btRegistreer);
@@ -125,8 +126,8 @@
         private System.Windows.Forms.Button btRegistreer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox inputUsername;
+        private System.Windows.Forms.TextBox inputPassword;
         private System.Windows.Forms.Button btWWVergeten;
     }
 }

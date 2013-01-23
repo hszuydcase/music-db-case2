@@ -77,8 +77,8 @@ namespace Music_Index
                 connectie.Open();
 
                 // put the command in the adapter
-                updateCommand.CommandText = command;
                 updateCommand.Connection = connectie;
+                updateCommand.CommandText = command;
                 adapter.UpdateCommand = updateCommand;
 
                 // do the update
@@ -96,6 +96,22 @@ namespace Music_Index
             {
                 connectie.Close();
             }
+
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="command"></param>
+        public bool Bestaat(string command)
+        {
+          
+                tabel = new DataTable();
+
+                OleDbDataAdapter adapter = new OleDbDataAdapter(command, databaseString);
+                tabel.Clear();
+                int count = adapter.Fill(tabel);
+
+                return count != 0;                        
 
         }
 
