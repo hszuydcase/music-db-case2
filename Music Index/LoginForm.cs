@@ -21,8 +21,9 @@ namespace Music_Index
         private void btLogin_Click(object sender, EventArgs e)
         {
             // QUERY UITVOEREN DOET DIE NIET GOED ZOWEL DELETE ALS INSERT NIET
-            string connectionStringg = @"Provider=Microsoft.SQLSERVER.CE.OLEDB.4.0;Data Source=|DataDirectory|\MusicIndexDataSet.sdf";
-            OleDbConnection connection = new OleDbConnection(connectionStringg);
+            string connectionString = @"Provider=Microsoft.SQLSERVER.CE.OLEDB.4.0;" +
+                @"Data Source=|DataDirectory|\MusicIndexDataSet.sdf";
+            OleDbConnection connection = new OleDbConnection(connectionString);
             OleDbCommand deleteCommand = new OleDbCommand();
             OleDbDataAdapter adapter = new OleDbDataAdapter();
 
@@ -30,10 +31,10 @@ namespace Music_Index
             {
                 connection.Open();
 
-                string command = "INSERT INTO Band (band_naam) VALUES ('nikstedoen')";
+                //string command = "INSERT INTO Band (band_naam) VALUES ('test')";
 
                 deleteCommand.Connection = connection;
-                deleteCommand.CommandText = command;
+                deleteCommand.CommandText = "INSERT INTO Band (band_naam) VALUES ('Muse')";
                 adapter.DeleteCommand = deleteCommand;
 
                 int rows = adapter.DeleteCommand.ExecuteNonQuery();

@@ -47,7 +47,7 @@ namespace Music_Index
 
                 // Zet het commando in de adapter
                 insertCommand.Connection = connectie;
-                insertCommand.CommandText = ("INSERT INTO gebruiker (username, password, user_voornaam, user_achternaam, email, admin_level)VALUES(N'ROb', N'hallo', N'rob', N'Hiensch', N'heetrob@hotmail.com', 1)");
+                insertCommand.CommandText = commando;
                 adapter.InsertCommand = insertCommand;
 
                 // Execute het commando
