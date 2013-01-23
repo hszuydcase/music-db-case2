@@ -68,20 +68,22 @@ namespace Music_Index
 
         }
 
-        public void Delete(string commando)
+        public void Update(string command)
         {
             try
             {
-                OleDbCommand deleteCommand = new OleDbCommand();
+                OleDbCommand updateCommand = new OleDbCommand();
                 OleDbDataAdapter adapter = new OleDbDataAdapter();
-
                 connectie.Open();
 
-                deleteCommand.Connection = connectie;
-                deleteCommand.CommandText = commando;
-                adapter.DeleteCommand = deleteCommand;
+                // put the command in the adapter
+                updateCommand.CommandText = command;
+                updateCommand.Connection = connectie;
+                adapter.UpdateCommand = updateCommand;
 
-                adapter.DeleteCommand.ExecuteNonQuery();
+                // do the update
+                adapter.UpdateCommand.ExecuteNonQuery();
+                connectie.Close();
 
 
 

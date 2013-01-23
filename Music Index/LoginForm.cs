@@ -20,10 +20,11 @@ namespace Music_Index
         private void btLogin_Click(object sender, EventArgs e)
         {
             // QUERY UITVOEREN DOET DIE NIET GOED ZOWEL DELETE ALS INSERT NIET
+            
             SQLService sqlService = new SQLService();
 
-            string commando2 = "DELETE FROM gebruiker WHERE user_id=1";
-            sqlService.Delete(commando2);
+            string commando2 = "UPDATE gebruiker SET username = 'lul'  WHERE user_id = 1 ";
+            sqlService.Update(commando2);
         }
     }
 }
