@@ -20,7 +20,14 @@ namespace Music_Index
         //Verbinding maken met de database, gebruikmakende van de OleDbConnectie en de databasestring
         public SQLService()
         {
-            connectie = new OleDbConnection(databaseString);
+            try
+            {
+                connectie = new OleDbConnection(databaseString);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
         }
 
         /// <summary>
@@ -40,11 +47,12 @@ namespace Music_Index
 
                 // Zet het commando in de adapter
                 insertCommand.Connection = connectie;
-                insertCommand.CommandText = commando;
+                insertCommand.CommandText = ("INSERT INTO gebruiker (username, password, user_voornaam, user_achternaam, email, admin_level)VALUES(N'ROb', N'hallo', N'rob', N'Hiensch', N'heetrob@hotmail.com', 1)");
                 adapter.InsertCommand = insertCommand;
 
                 // Execute het commando
                 adapter.InsertCommand.ExecuteNonQuery();
+                MessageBox.Show("SQL DONE");
             }
 
             // Catch de exception indien deze ontstaat.
