@@ -54,33 +54,33 @@ namespace Music_Index {
         
         private band_traDataTable tableband_tra;
         
-        private global::System.Data.DataRelation relationFK_Album_alb_tra;
-        
         private global::System.Data.DataRelation relationFK_Track_alb_tra;
+        
+        private global::System.Data.DataRelation relationFK_Album_alb_tra;
         
         private global::System.Data.DataRelation relationFK_artiest_art_tra;
         
-        private global::System.Data.DataRelation relationFK_artiest_band_art;
-        
         private global::System.Data.DataRelation relationFK_Band_band_art;
         
-        private global::System.Data.DataRelation relationFK_Track_cat_tra;
+        private global::System.Data.DataRelation relationFK_artiest_band_art;
         
         private global::System.Data.DataRelation relationFK_categorie_cat_tra;
         
-        private global::System.Data.DataRelation relationFK_Track_geschiedenis;
+        private global::System.Data.DataRelation relationFK_Track_cat_tra;
         
         private global::System.Data.DataRelation relationFK_gebruiker_geschiedenis;
         
-        private global::System.Data.DataRelation relationFK_Track_favoriet;
+        private global::System.Data.DataRelation relationFK_Track_geschiedenis;
         
         private global::System.Data.DataRelation relationFK_gebruiker_favoriet;
         
+        private global::System.Data.DataRelation relationFK_Track_favoriet;
+        
         private global::System.Data.DataRelation relationFK_gebruiker_Rating;
         
-        private global::System.Data.DataRelation relationFK_gebruiker_review;
-        
         private global::System.Data.DataRelation relationFK_Track_review;
+        
+        private global::System.Data.DataRelation relationFK_gebruiker_review;
         
         private global::System.Data.DataRelation relationFK_Track_band_tra;
         
@@ -566,20 +566,20 @@ namespace Music_Index {
                     this.tableband_tra.InitVars();
                 }
             }
-            this.relationFK_Album_alb_tra = this.Relations["FK_Album_alb_tra"];
             this.relationFK_Track_alb_tra = this.Relations["FK_Track_alb_tra"];
+            this.relationFK_Album_alb_tra = this.Relations["FK_Album_alb_tra"];
             this.relationFK_artiest_art_tra = this.Relations["FK_artiest_art_tra"];
-            this.relationFK_artiest_band_art = this.Relations["FK_artiest_band_art"];
             this.relationFK_Band_band_art = this.Relations["FK_Band_band_art"];
-            this.relationFK_Track_cat_tra = this.Relations["FK_Track_cat_tra"];
+            this.relationFK_artiest_band_art = this.Relations["FK_artiest_band_art"];
             this.relationFK_categorie_cat_tra = this.Relations["FK_categorie_cat_tra"];
-            this.relationFK_Track_geschiedenis = this.Relations["FK_Track_geschiedenis"];
+            this.relationFK_Track_cat_tra = this.Relations["FK_Track_cat_tra"];
             this.relationFK_gebruiker_geschiedenis = this.Relations["FK_gebruiker_geschiedenis"];
-            this.relationFK_Track_favoriet = this.Relations["FK_Track_favoriet"];
+            this.relationFK_Track_geschiedenis = this.Relations["FK_Track_geschiedenis"];
             this.relationFK_gebruiker_favoriet = this.Relations["FK_gebruiker_favoriet"];
+            this.relationFK_Track_favoriet = this.Relations["FK_Track_favoriet"];
             this.relationFK_gebruiker_Rating = this.Relations["FK_gebruiker_Rating"];
-            this.relationFK_gebruiker_review = this.Relations["FK_gebruiker_review"];
             this.relationFK_Track_review = this.Relations["FK_Track_review"];
+            this.relationFK_gebruiker_review = this.Relations["FK_gebruiker_review"];
             this.relationFK_Track_band_tra = this.Relations["FK_Track_band_tra"];
             this.relationTrack_art_tra = this.Relations["Track_art_tra"];
             this.relationTrack_Rating = this.Relations["Track_Rating"];
@@ -625,16 +625,16 @@ namespace Music_Index {
             this.tableband_tra = new band_traDataTable();
             base.Tables.Add(this.tableband_tra);
             global::System.Data.ForeignKeyConstraint fkc;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_Album_alb_tra", new global::System.Data.DataColumn[] {
-                        this.tableAlbum.album_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablealb_tra.album_idColumn});
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_alb_tra", new global::System.Data.DataColumn[] {
+                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablealb_tra.track_idColumn});
             this.tablealb_tra.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_alb_tra", new global::System.Data.DataColumn[] {
-                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablealb_tra.track_idColumn});
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Album_alb_tra", new global::System.Data.DataColumn[] {
+                        this.tableAlbum.album_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablealb_tra.album_idColumn});
             this.tablealb_tra.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
@@ -646,13 +646,6 @@ namespace Music_Index {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_artiest_band_art", new global::System.Data.DataColumn[] {
-                        this.tableartiest.artiest_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableband_art.artiest_idColumn});
-            this.tableband_art.Constraints.Add(fkc);
-            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
-            fkc.DeleteRule = global::System.Data.Rule.Cascade;
-            fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_Band_band_art", new global::System.Data.DataColumn[] {
                         this.tableBand.band_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableband_art.band_idColumn});
@@ -660,10 +653,10 @@ namespace Music_Index {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_cat_tra", new global::System.Data.DataColumn[] {
-                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablecat_tra.track_idColumn});
-            this.tablecat_tra.Constraints.Add(fkc);
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_artiest_band_art", new global::System.Data.DataColumn[] {
+                        this.tableartiest.artiest_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableband_art.artiest_idColumn});
+            this.tableband_art.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -674,10 +667,10 @@ namespace Music_Index {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_geschiedenis", new global::System.Data.DataColumn[] {
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_cat_tra", new global::System.Data.DataColumn[] {
                         this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablegeschiedenis.track_idColumn});
-            this.tablegeschiedenis.Constraints.Add(fkc);
+                        this.tablecat_tra.track_idColumn});
+            this.tablecat_tra.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
@@ -688,16 +681,23 @@ namespace Music_Index {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_favoriet", new global::System.Data.DataColumn[] {
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_geschiedenis", new global::System.Data.DataColumn[] {
                         this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablefavoriet.track_idColumn});
-            this.tablefavoriet.Constraints.Add(fkc);
+                        this.tablegeschiedenis.track_idColumn});
+            this.tablegeschiedenis.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
             fkc = new global::System.Data.ForeignKeyConstraint("FK_gebruiker_favoriet", new global::System.Data.DataColumn[] {
                         this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablefavoriet.user_idColumn});
+            this.tablefavoriet.Constraints.Add(fkc);
+            fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
+            fkc.DeleteRule = global::System.Data.Rule.Cascade;
+            fkc.UpdateRule = global::System.Data.Rule.Cascade;
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_favoriet", new global::System.Data.DataColumn[] {
+                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablefavoriet.track_idColumn});
             this.tablefavoriet.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
@@ -709,16 +709,16 @@ namespace Music_Index {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_gebruiker_review", new global::System.Data.DataColumn[] {
-                        this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablereview.user_idColumn});
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_review", new global::System.Data.DataColumn[] {
+                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablereview.track_idColumn});
             this.tablereview.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            fkc = new global::System.Data.ForeignKeyConstraint("FK_Track_review", new global::System.Data.DataColumn[] {
-                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablereview.track_idColumn});
+            fkc = new global::System.Data.ForeignKeyConstraint("FK_gebruiker_review", new global::System.Data.DataColumn[] {
+                        this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablereview.user_idColumn});
             this.tablereview.Constraints.Add(fkc);
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
@@ -730,62 +730,62 @@ namespace Music_Index {
             fkc.AcceptRejectRule = global::System.Data.AcceptRejectRule.None;
             fkc.DeleteRule = global::System.Data.Rule.Cascade;
             fkc.UpdateRule = global::System.Data.Rule.Cascade;
-            this.relationFK_Album_alb_tra = new global::System.Data.DataRelation("FK_Album_alb_tra", new global::System.Data.DataColumn[] {
-                        this.tableAlbum.album_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablealb_tra.album_idColumn}, false);
-            this.Relations.Add(this.relationFK_Album_alb_tra);
             this.relationFK_Track_alb_tra = new global::System.Data.DataRelation("FK_Track_alb_tra", new global::System.Data.DataColumn[] {
                         this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablealb_tra.track_idColumn}, false);
             this.Relations.Add(this.relationFK_Track_alb_tra);
+            this.relationFK_Album_alb_tra = new global::System.Data.DataRelation("FK_Album_alb_tra", new global::System.Data.DataColumn[] {
+                        this.tableAlbum.album_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablealb_tra.album_idColumn}, false);
+            this.Relations.Add(this.relationFK_Album_alb_tra);
             this.relationFK_artiest_art_tra = new global::System.Data.DataRelation("FK_artiest_art_tra", new global::System.Data.DataColumn[] {
                         this.tableartiest.artiest_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableart_tra.artiest_idColumn}, false);
             this.Relations.Add(this.relationFK_artiest_art_tra);
-            this.relationFK_artiest_band_art = new global::System.Data.DataRelation("FK_artiest_band_art", new global::System.Data.DataColumn[] {
-                        this.tableartiest.artiest_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tableband_art.artiest_idColumn}, false);
-            this.Relations.Add(this.relationFK_artiest_band_art);
             this.relationFK_Band_band_art = new global::System.Data.DataRelation("FK_Band_band_art", new global::System.Data.DataColumn[] {
                         this.tableBand.band_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableband_art.band_idColumn}, false);
             this.Relations.Add(this.relationFK_Band_band_art);
-            this.relationFK_Track_cat_tra = new global::System.Data.DataRelation("FK_Track_cat_tra", new global::System.Data.DataColumn[] {
-                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablecat_tra.track_idColumn}, false);
-            this.Relations.Add(this.relationFK_Track_cat_tra);
+            this.relationFK_artiest_band_art = new global::System.Data.DataRelation("FK_artiest_band_art", new global::System.Data.DataColumn[] {
+                        this.tableartiest.artiest_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tableband_art.artiest_idColumn}, false);
+            this.Relations.Add(this.relationFK_artiest_band_art);
             this.relationFK_categorie_cat_tra = new global::System.Data.DataRelation("FK_categorie_cat_tra", new global::System.Data.DataColumn[] {
                         this.tablecategorie.cat_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablecat_tra.cat_idColumn}, false);
             this.Relations.Add(this.relationFK_categorie_cat_tra);
-            this.relationFK_Track_geschiedenis = new global::System.Data.DataRelation("FK_Track_geschiedenis", new global::System.Data.DataColumn[] {
+            this.relationFK_Track_cat_tra = new global::System.Data.DataRelation("FK_Track_cat_tra", new global::System.Data.DataColumn[] {
                         this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablegeschiedenis.track_idColumn}, false);
-            this.Relations.Add(this.relationFK_Track_geschiedenis);
+                        this.tablecat_tra.track_idColumn}, false);
+            this.Relations.Add(this.relationFK_Track_cat_tra);
             this.relationFK_gebruiker_geschiedenis = new global::System.Data.DataRelation("FK_gebruiker_geschiedenis", new global::System.Data.DataColumn[] {
                         this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablegeschiedenis.user_idColumn}, false);
             this.Relations.Add(this.relationFK_gebruiker_geschiedenis);
-            this.relationFK_Track_favoriet = new global::System.Data.DataRelation("FK_Track_favoriet", new global::System.Data.DataColumn[] {
+            this.relationFK_Track_geschiedenis = new global::System.Data.DataRelation("FK_Track_geschiedenis", new global::System.Data.DataColumn[] {
                         this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablefavoriet.track_idColumn}, false);
-            this.Relations.Add(this.relationFK_Track_favoriet);
+                        this.tablegeschiedenis.track_idColumn}, false);
+            this.Relations.Add(this.relationFK_Track_geschiedenis);
             this.relationFK_gebruiker_favoriet = new global::System.Data.DataRelation("FK_gebruiker_favoriet", new global::System.Data.DataColumn[] {
                         this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablefavoriet.user_idColumn}, false);
             this.Relations.Add(this.relationFK_gebruiker_favoriet);
+            this.relationFK_Track_favoriet = new global::System.Data.DataRelation("FK_Track_favoriet", new global::System.Data.DataColumn[] {
+                        this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablefavoriet.track_idColumn}, false);
+            this.Relations.Add(this.relationFK_Track_favoriet);
             this.relationFK_gebruiker_Rating = new global::System.Data.DataRelation("FK_gebruiker_Rating", new global::System.Data.DataColumn[] {
                         this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableRating.user_idColumn}, false);
             this.Relations.Add(this.relationFK_gebruiker_Rating);
-            this.relationFK_gebruiker_review = new global::System.Data.DataRelation("FK_gebruiker_review", new global::System.Data.DataColumn[] {
-                        this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
-                        this.tablereview.user_idColumn}, false);
-            this.Relations.Add(this.relationFK_gebruiker_review);
             this.relationFK_Track_review = new global::System.Data.DataRelation("FK_Track_review", new global::System.Data.DataColumn[] {
                         this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
                         this.tablereview.track_idColumn}, false);
             this.Relations.Add(this.relationFK_Track_review);
+            this.relationFK_gebruiker_review = new global::System.Data.DataRelation("FK_gebruiker_review", new global::System.Data.DataColumn[] {
+                        this.tablegebruiker.user_idColumn}, new global::System.Data.DataColumn[] {
+                        this.tablereview.user_idColumn}, false);
+            this.Relations.Add(this.relationFK_gebruiker_review);
             this.relationFK_Track_band_tra = new global::System.Data.DataRelation("FK_Track_band_tra", new global::System.Data.DataColumn[] {
                         this.tableTrack.track_idColumn}, new global::System.Data.DataColumn[] {
                         this.tableband_tra.track_idColumn}, false);
@@ -5914,23 +5914,23 @@ namespace Music_Index {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public AlbumRow AlbumRow {
-                get {
-                    return ((AlbumRow)(this.GetParentRow(this.Table.ParentRelations["FK_Album_alb_tra"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Album_alb_tra"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public TrackRow TrackRow {
                 get {
                     return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_alb_tra"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_Track_alb_tra"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public AlbumRow AlbumRow {
+                get {
+                    return ((AlbumRow)(this.GetParentRow(this.Table.ParentRelations["FK_Album_alb_tra"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Album_alb_tra"]);
                 }
             }
         }
@@ -6472,23 +6472,23 @@ namespace Music_Index {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public artiestRow artiestRow {
-                get {
-                    return ((artiestRow)(this.GetParentRow(this.Table.ParentRelations["FK_artiest_band_art"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_artiest_band_art"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public BandRow BandRow {
                 get {
                     return ((BandRow)(this.GetParentRow(this.Table.ParentRelations["FK_Band_band_art"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_Band_band_art"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public artiestRow artiestRow {
+                get {
+                    return ((artiestRow)(this.GetParentRow(this.Table.ParentRelations["FK_artiest_band_art"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_artiest_band_art"]);
                 }
             }
         }
@@ -6531,23 +6531,23 @@ namespace Music_Index {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TrackRow TrackRow {
-                get {
-                    return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_cat_tra"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Track_cat_tra"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public categorieRow categorieRow {
                 get {
                     return ((categorieRow)(this.GetParentRow(this.Table.ParentRelations["FK_categorie_cat_tra"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_categorie_cat_tra"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TrackRow TrackRow {
+                get {
+                    return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_cat_tra"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Track_cat_tra"]);
                 }
             }
         }
@@ -6807,23 +6807,23 @@ namespace Music_Index {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TrackRow TrackRow {
-                get {
-                    return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_geschiedenis"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Track_geschiedenis"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public gebruikerRow gebruikerRow {
                 get {
                     return ((gebruikerRow)(this.GetParentRow(this.Table.ParentRelations["FK_gebruiker_geschiedenis"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_gebruiker_geschiedenis"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TrackRow TrackRow {
+                get {
+                    return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_geschiedenis"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Track_geschiedenis"]);
                 }
             }
             
@@ -6894,23 +6894,23 @@ namespace Music_Index {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public TrackRow TrackRow {
-                get {
-                    return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_favoriet"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_Track_favoriet"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public gebruikerRow gebruikerRow {
                 get {
                     return ((gebruikerRow)(this.GetParentRow(this.Table.ParentRelations["FK_gebruiker_favoriet"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_gebruiker_favoriet"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public TrackRow TrackRow {
+                get {
+                    return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_favoriet"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_Track_favoriet"]);
                 }
             }
             
@@ -7094,23 +7094,23 @@ namespace Music_Index {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public gebruikerRow gebruikerRow {
-                get {
-                    return ((gebruikerRow)(this.GetParentRow(this.Table.ParentRelations["FK_gebruiker_review"])));
-                }
-                set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK_gebruiker_review"]);
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public TrackRow TrackRow {
                 get {
                     return ((TrackRow)(this.GetParentRow(this.Table.ParentRelations["FK_Track_review"])));
                 }
                 set {
                     this.SetParentRow(value, this.Table.ParentRelations["FK_Track_review"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public gebruikerRow gebruikerRow {
+                get {
+                    return ((gebruikerRow)(this.GetParentRow(this.Table.ParentRelations["FK_gebruiker_review"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_gebruiker_review"]);
                 }
             }
             
